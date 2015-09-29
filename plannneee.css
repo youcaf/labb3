@@ -1,0 +1,37 @@
+.slideshow {
+  overflow: hidden;
+  z-index:-1;
+}
+.images {
+  background-image: url("background.jpg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: slideshow 10s linear infinite;
+  -moz-animation:    slideshow 10s linear infinite;
+}
+
+.plane{ 
+	position:absolute;
+	margin: auto;
+    width: 60%;
+	z-index: 50;
+	animation: planeA 10s linear infinite;
+}
+
+@keyframes planeA {
+	from {top: 10px;}
+	50%{top:680px;}
+	to {top: 10px;}
+}	
+
+@-webkit-keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -100%; }
+}
+@moz-keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -100%; }
+}
